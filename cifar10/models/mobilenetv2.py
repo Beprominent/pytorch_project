@@ -33,7 +33,7 @@ class Block(nn.Module):
 class MobileNetV2(nn.Module):
     # (expansion, num_output, num_blocks, strides)
     cfg = [(1,  16, 1, 1),
-           (6,  24, 2, 1),
+           (6,  24, 2, 1),  # It is different from the paper, but the performance is better than the origin
            (6,  32, 3, 2),
            (6,  64, 4, 2),
            (6,  96, 3, 1),
